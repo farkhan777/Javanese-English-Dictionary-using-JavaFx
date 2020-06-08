@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="600.0" prefWidth="870.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.BahasaHalusAppController">
+   <children>
+      <AnchorPane prefHeight="601.0" prefWidth="226.0" style="-fx-background-color: #ff6666; -fx-background-radius: 0 30 30 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutY="211.0" prefHeight="386.0" prefWidth="240.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="211.0">
+               <children>
+                  <Button fx:id="button1" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#Beranda" prefHeight="51.0" prefWidth="240.0" stylesheets="@style.css" text="Beranda" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@h2.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#Bahasa" prefHeight="51.0" prefWidth="241.0" stylesheets="@style.css" text="Bahasa Indonesia" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@b2.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="111.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="241.0" stylesheets="@style.css" text="Jawa" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@b2.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#TentangKami" prefHeight="51.0" prefWidth="241.0" stylesheets="@style.css" text="Tentang Kami" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@m1.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding></Button>
+               </children>
+            </VBox>
+            <Pane layoutY="44.0" prefHeight="95.0" prefWidth="240.0" style="-fx-background-color: #ff6666; -fx-background-radius: 5;">
+               <children>
+                  <Text fill="WHITE" layoutX="17.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bahasa Indonesia - Jawa">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="17.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jawa - Bahasa Indonesia">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="91.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamus">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <ImageView fitHeight="53.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cv9.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <StackPane layoutX="240.0" layoutY="187.0" prefHeight="386.0" prefWidth="630.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="187.0">
+         <children>
+            <VBox prefHeight="228.0" prefWidth="430.0" StackPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="table" prefHeight="310.0" prefWidth="430.0">
+                    <columns>
+                      <TableColumn fx:id="col_bahasa" minWidth="-Infinity" prefWidth="216.0" style="-fx-background-color: #ff6666;" text="Bahasa Indonesia" />
+                      <TableColumn fx:id="col_jawa" minWidth="-1.0" prefWidth="213.0" style="-fx-background-color: #ff6666;" text="Jawa" />
+                    </columns>
+                  </TableView>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="50.0" left="100.0" right="100.0" top="50.0" />
+               </StackPane.margin>
+            </VBox>
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" layoutX="240.0" layoutY="166.0" prefHeight="79.0" prefWidth="630.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="166.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kata">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="filter" prefHeight="25.0" prefWidth="212.0" promptText="Masukkan kata di sini" style="-fx-background-color: white;">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow color="#ff6666" />
+               </effect>
+            </TextField>
+            <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@s2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="240.0" layoutY="129.0" prefHeight="49.0" prefWidth="630.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih : ">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="70.0" stylesheets="@style2.css" text="Halus">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#ff6666" />
+               </effect>
+            </Button>
+            <Button layoutX="110.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#Kasar" prefHeight="34.0" prefWidth="70.0" stylesheets="@style2.css" text="Kasar">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" layoutX="652.0" layoutY="-34.0" prefHeight="87.0" prefWidth="281.0" AnchorPane.leftAnchor="464.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="-23.0">
+         <children>
+            <Pane prefHeight="87.0" prefWidth="309.0" rotate="-26.6" style="-fx-background-color: #ff6666; -fx-background-radius: 30 0 30  30;" />
+         </children>
+      </HBox>
+      <fx:include source="TitleBar.fxml" AnchorPane.leftAnchor="710.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="6.0" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
